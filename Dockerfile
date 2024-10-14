@@ -1,7 +1,7 @@
-FROM xhofe/alist:v2.6.4
+FROM xhofe/alist:latest
 
 WORKDIR /opt/alist/
 
 EXPOSE 5244
 
-ENTRYPOINT [ "./alist", "-docker" ]
+ENTRYPOINT [ "./alist", "server", "--no-prefix" ]
